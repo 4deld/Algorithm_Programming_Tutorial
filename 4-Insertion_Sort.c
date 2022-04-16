@@ -20,6 +20,7 @@ int main() {
 			L[j] = L[j + 1];
 			L[j + 1] = tmp;
 			j--;
+			if (j == -1)break; //j가 -1이 되면 없는 인덱스를 참조하기 때문에 에러 남
 		}
 	}
 	for (int j = 0; j < 10; j++) {
